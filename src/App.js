@@ -39,9 +39,9 @@ class WeatherDisplay extends Component {
           {weather.main} in {weatherData.name}
           <img src={iconUrl} />
         </h1>
-        <p>Текущая: 5*({weatherData.main.temp}-32)/9°</p>
-        <p>Максимальная: 5*({weatherData.main.temp_max}-32)/9°</p>
-        <p>Минимальная: 5*({weatherData.main.temp_min}-32)/9°</p>
+        <p>Текущая: {weatherData.main.temp}°</p>
+        <p>Максимальная: {weatherData.main.temp_max}°</p>
+        <p>Минимальная: {weatherData.main.temp_min}°</p>
         <p>Скорость ветра: {weatherData.wind.speed} миль/час</p>
       </div>
     );
@@ -70,7 +70,7 @@ class App extends Component {
         <Grid>
           <Row>
             <Col md={4} sm={4}>
-              <h3>Select a city</h3>
+              <h3>Выберите город</h3>
               <Nav
                 bsStyle="pills"
                 stacked
