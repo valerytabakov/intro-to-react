@@ -39,10 +39,10 @@ class WeatherDisplay extends Component {
           {weather.main} in {weatherData.name}
           <img src={iconUrl} />
         </h1>
-        <p>Current: {weatherData.main.temp}°</p>
-        <p>High: {weatherData.main.temp_max}°</p>
-        <p>Low: {weatherData.main.temp_min}°</p>
-        <p>Wind Speed: {weatherData.wind.speed} mi/hr</p>
+        <p>Текущая: 5*({weatherData.main.temp}-32)/9°</p>
+        <p>Максимальная: 5*({weatherData.main.temp_max}-32)/9°</p>
+        <p>Минимальная: 5*({weatherData.main.temp_min}-32)/9°</p>
+        <p>Скорость ветра: {weatherData.wind.speed} миль/час</p>
       </div>
     );
   }
