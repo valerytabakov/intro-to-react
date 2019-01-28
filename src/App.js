@@ -6,7 +6,7 @@ import "./App.css";
 import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 
 const PLACES = [
-  { name: "Palo Alto", zip: "94303" },
+  { name: "город Киев", zip: "03056" },
   { name: "San Jose", zip: "94088" },
   { name: "Santa Cruz", zip: "95062" },
   { name: "Honolulu", zip: "96803" }
