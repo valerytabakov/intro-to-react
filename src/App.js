@@ -7,9 +7,9 @@ import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 
 const PLACES = [
   { name: "Киев", zip: "03056" },
-  { name: "San Jose", zip: "94088" },
-  { name: "Santa Cruz", zip: "95062" },
-  { name: "Honolulu", zip: "96803" }
+  { name: "Сан Хосе", zip: "94088" },
+  { name: "Санта Круз", zip: "95062" },
+  { name: "Гонолулу", zip: "96803" }
 ];
 
 class WeatherDisplay extends Component {
