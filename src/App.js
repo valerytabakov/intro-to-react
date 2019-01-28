@@ -30,7 +30,7 @@ class WeatherDisplay extends Component {
   }
   render() {
     const weatherData = this.state.weatherData;
-    if (!weatherData) return <div>Loading</div>;
+    if (!weatherData) return <div>Загрузка</div>;
     const weather = weatherData.weather[0];
     const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
     return (
@@ -62,9 +62,9 @@ class App extends Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              React Simple Weather App
+              Простое приложение Прогноз погоды на React
             </Navbar.Brand>
-            <a href="https://github.com/ericvicenti/intro-to-react">Learn to build me</a>
+            <a href="https://github.com/valerytabakov/intro-to-react">Узнай как я устроено</a>
           </Navbar.Header>
         </Navbar>
         <Grid>
