@@ -6,7 +6,7 @@ import "./App.css";
 import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 
 const PLACES = [
-  { name: "город Киев", zip: "03056" },
+  { name: "Киев", zip: "03056" },
   { name: "San Jose", zip: "94088" },
   { name: "Santa Cruz", zip: "95062" },
   { name: "Honolulu", zip: "96803" }
@@ -39,9 +39,9 @@ class WeatherDisplay extends Component {
           {weather.main} in {weatherData.name}
           <img src={iconUrl} />
         </h1>
-        <p>Текущая: {weatherData.main.temp}°</p>
-        <p>Максимальная: {weatherData.main.temp_max}°</p>
-        <p>Минимальная: {weatherData.main.temp_min}°</p>
+        <p>Текущая: {weatherData.main.temp}°F</p>
+        <p>Максимальная: {weatherData.main.temp_max}°F</p>
+        <p>Минимальная: {weatherData.main.temp_min}°F</p>
         <p>Скорость ветра: {weatherData.wind.speed} миль/час</p>
       </div>
     );
