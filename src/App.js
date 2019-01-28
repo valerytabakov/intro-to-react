@@ -40,8 +40,8 @@ class WeatherDisplay extends Component {
           <img src={iconUrl} />
         </h1>
         <p>Текущая: {5*(weatherData.main.temp-32)/9}°C</p>
-        <p>Максимальная: {weatherData.main.temp_max}°F</p>
-        <p>Минимальная: {weatherData.main.temp_min}°F</p>
+        <p>Максимальная: {5*(weatherData.main.temp_max-32)/9}°C</p>
+        <p>Минимальная: {5*(weatherData.main.temp_min-32)/9}°C</p>
         <p>Скорость ветра: {weatherData.wind.speed} миль/час</p>
       </div>
     );
