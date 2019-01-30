@@ -42,7 +42,7 @@ class WeatherDisplay extends Component {
         <p>Текущая: {(5*(weatherData.main.temp-32)/9).toFixed(2)}°C</p>
         <p>Максимальная: {(5*(weatherData.main.temp_max-32)/9).toFixed(2)}°C</p>
         <p>Минимальная: {(5*(weatherData.main.temp_min-32)/9).toFixed(2)}°C</p>
-        <p>Скорость ветра: {0.44704*weatherData.wind.speed.toFixed(2)} м/с</p>
+        <p>Скорость ветра: {(0.44704*weatherData.wind.speed).toFixed(2)} м/с</p>
       </div>
     );
   }
